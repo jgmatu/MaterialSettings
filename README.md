@@ -90,3 +90,13 @@ To simulate the elevation of the Toolbar on pre-L devices, utilise the following
 
 >**Remember**: Import the Design library in your `app.gradle`:<br/>
 >`compile 'com.android.support:design:22.2.0'`
+
+
+## READ SharedPreferences
+
+To read shared preferences in another activity you must call to : 
+
+```java
+SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        Log.e(TAG, "Preferences : " +  preferences.getAll().toString());
+```
